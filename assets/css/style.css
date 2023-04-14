@@ -5,8 +5,11 @@
     box-sizing: border-box;
 }
 
-.aviso {
+body {
     font-family: 'Inter', sans-serif;
+
+}
+.aviso {
     font-weight: bold;
     color: #495057;
 }
