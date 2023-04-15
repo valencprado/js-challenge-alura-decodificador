@@ -5,18 +5,20 @@ const btnCripto = document.querySelector(".criptografa");
 
 function criptografa() {
   let texto = textoInput.value;
+  texto.toLowerCase();
   texto = texto.replace(/e/g, "enter");
   texto = texto.replace(/o/g, "ober");
   texto = texto.replace(/i/g, "imes");
   texto = texto.replace(/a/g, "ai");
   texto = texto.replace(/u/g, "ufat");
-
+  
   
   return resultado.innerHTML = texto;
 }
 
 function descriptografa() {
   let texto = textoInput.value;
+  texto.toLowerCase();
   texto = texto.replace(/ai/g, "a");
   texto = texto.replace(/enter/g, "e");
   texto = texto.replace(/imes/g, "i");
