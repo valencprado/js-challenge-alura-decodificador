@@ -1,27 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+:root {
+    --var-gray-100: #CED4DA;
+    --var-gray-200: #ADB5BD;
+    --var-gray-300: #868E96;
+    --var-gray-400: #495057;
+    --var-gray-500: #343A40;
+    --var-dark-blue-100: #609ED4;
+    --var-dark-blue-200: #356EA9;
+    --var-dark-blue-300: #0A3871;
+    --var-dark-blue-400: #072B61;
+    --var-dark-blue-500: #052051;
+    --var-light-blue-100: #F3F5FC;
+    --var-light-blue-200: #EFF1FA;
+    --var-light-blue-300: #E9ECF8;
+    --var-light-blue-400: #AAB2D5;
+    --var-light-blue-500: #757FB2;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    background: var(--var-light-blue-100);
+}
 
+.icone-header {
+    padding: 15px 20px;
 }
 #texto, main, #texto:focus {
     width: 60vw;
+    height: 40vh;
     border: none;
     outline: none;
+    background-color: var(--var-light-blue-100);
+    
 }
-.aviso {
-    font-weight: bold;
-    color: #495057;
+#texto {
+    color: var(--var-dark-blue-300);
+    font-size: 32px;
+}
+.input {
+    margin-bottom: 9rem;
 }
 
-.criptografa, .descriptografa {
+::placeholder {
+    color: var(--var-dark-blue-300);
+    font-size: 32px;
+}
+
+.content, .container-resultado {
+    display: flex;
+    flex-direction: row;
+    
+}
+.resultado {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 24px;
+    color: var(--var-gray-400);
+}
+
+.container-resultado {
+    width: 400px;
+    height: 95vh;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.container-resultado img {
+    margin-top: 4em;
+    max-width: 100%;
+}
+.container-resultado h3 {
+    font-size: 24px;
+    color: var(--var-gray-500);
+    margin-bottom: 10px;
+}
+
+.aviso, .container-resultado p {
+    color: var(--var-gray-400);
+}
+.content-container-resultado {
+    width: 336px;
+}
+.container-resultado h3, .container-resultado p {
+    text-align: center ;
+}
+
+.btn-criptografa, .btn-descriptografa{
     width: 328px;
     height: 67px;
     border-radius: 24px;
-    
+
+}
+
+.btn-criptografa {
+    background-color: var(--var-dark-blue-300);
+    color: #FFF;
+    border: none;
+}
+.btn-criptografa:hover {
+    cursor: pointer;
+    background-color: var(--var-dark-blue-500);
+}
+.btn-descriptografa {
+    border: 1px solid var(--var-dark-blue-300);
+    color: var(--var-dark-blue-300);
+}
+.btn-descriptografa:hover{
+    cursor: pointer;
+    background-color: var(--var-gray-100);
+}
+
+#btn-copiar {
+position: absolute;
+width: 336px;
+height: 67px;
+left: 849px;
+top: 585px;
 }
