@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link rel="shortcut icon" href="./assets/img/alura-icon.svg" type="image/x-icon">
     <title>Alura Challenge - Decodificador</title>
 </head>
+
 <body>
     <header>
-        <img src="./assets/img/alura-icon.svg" alt="Ícone da Alura">
+        <img src="./assets/img/alura-icon.svg" alt="Ícone da Alura" class="icone-header">
     </header>
     <div class="content">
 
@@ -19,7 +21,7 @@
                 <input type="text" name="" id="texto" placeholder="Digite seu texto">
             </div>
             <p class="aviso"> <img src="./assets/img/warning.svg" alt=""> Apenas letras maiúsculas e sem acento</p>
-            
+
             <div class="buttons">
                 <button class="btn-criptografa">Criptografar</button>
                 <button class="btn-descriptografa">Descriptografar</button>
@@ -27,16 +29,22 @@
         </main>
         <aside>
             <div class="container-resultado">
-                
+                <div class="content-container-resultado">
+                        
+                    <img src="./assets/img/container-resultado-img.svg" alt="">
+                    <h3>Nenhuma mensagem encontrada.</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
                 <div class="resultado">
-                    
-            </div>  
-        </div>
-    </aside>
-</div>
+                </div>
+                <button id="btn-copiar" class="btn-descriptografa">Copiar</button>
+            </div>
+        </aside>
+    </div>
     <footer>
         Desenvolvido por <a href="http://github.com/valencprado" target="_blank" rel="noopener noreferrer">Valen.</a>
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
